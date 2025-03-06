@@ -1,0 +1,94 @@
+.curry-input-wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  icon-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 35px;
+    justify-content: center;
+    color: $input-color;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    svg {
+      color: $input-placeholder-color;
+    }
+  }
+}
+.icon-wrapper + .curry-input-inner {
+  padding-right: 35px;
+}
+.curry-input-inner {
+  width: 100%;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $input-font-size;
+  font-weight: $font-weight-normal;
+  line-height: $input-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  background-clip: padding-box;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  transition: $input-transition;
+
+  &:focus {
+    border-color: $input-border-focus-color;
+    background-color: $input-focus-bg;
+    border-color: $input-focus-border-color;
+    box-shadow: $input-focus-box-shadow;
+    outline: 0;
+  }
+  &::placeholder {
+    color: $input-placeholder-color;
+    opacity: 1;
+  }
+  &:disabled,
+  &[readonly] {
+    background-color: $input-disabled-bg;
+    opacity: 1;
+  }
+}
+
+.curry-input-group-prepend,
+.curry-input-group-append {
+  display: flex;
+  align-items: center;
+  padding: $input-padding-y $input-padding-x;
+  margin-bottom: 8; // Allow use of <label>elements by overriding our default margin-bottomfont-size:$input-font-size;// Match inputsfont-weight:$font-weight-normal:
+  line-height: $input-line-height;
+  color: $input-group-addon-color;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $input-group-addon-bg;
+  border: $input-border-width solid $input-group-addon-border-color;
+  border-radius: $input-border-radius;
+}
+
+.curry-input-group-append + .btn {
+  padding: 0;
+  border: 0;
+}
+
+input-group > .curry-input-group-prepend,
+.input-group.input-group-append > .curry-input-inner {
+  @include border-right-radius(0);
+}
+
+input-group > .curry-input-group-append,
+.input-group.input-group-prepend > .curry-input-inner {
+  @include border-left-radius(0);
+}
+
+input-size-sm .curry-input-inner {
+  padding: $input-padding-y-sm $input-padding-x-sm;
+  font-size: $input-font-size-sm;
+  border-radius: $input-border-radius-sm;
+}
+input-size-lg .curry-input-inner {
+  padding: $input-padding-y-lg $input-padding-x-1g;
+  font-size: $input-font-size-1g;
+  border-radius: $input-border-radius-1g;
+}
