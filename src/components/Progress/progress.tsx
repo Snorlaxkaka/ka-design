@@ -1,5 +1,12 @@
 import React, { FC } from 'react'
-import { ThemeProps } from '../Icon/icon'
+import './style.scss'
+type ThemeProps =
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger'
 
 // 定义 Progress 组件的属性接口
 export interface ProgressProps {

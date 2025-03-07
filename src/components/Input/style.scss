@@ -1,3 +1,6 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .curry-input-wrapper {
   display: flex;
   width: 100%;
@@ -35,7 +38,7 @@
   transition: $input-transition;
 
   &:focus {
-    border-color: $input-border-focus-color;
+    border-color: $input-focus-border-color;
     background-color: $input-focus-bg;
     border-color: $input-focus-border-color;
     box-shadow: $input-focus-box-shadow;
@@ -88,7 +91,7 @@ input-size-sm .curry-input-inner {
   border-radius: $input-border-radius-sm;
 }
 input-size-lg .curry-input-inner {
-  padding: $input-padding-y-lg $input-padding-x-1g;
-  font-size: $input-font-size-1g;
-  border-radius: $input-border-radius-1g;
+  padding: $input-padding-y-lg $input-padding-x-lg;
+  font-size: $input-font-size-lg;
+  border-radius: $input-border-radius-lg;
 }

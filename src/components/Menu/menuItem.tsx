@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { MenuContext } from './menu'
+import './style.scss'
 export interface MenuItemProps {
   index?: string
   disabled?: boolean

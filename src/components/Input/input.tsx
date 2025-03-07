@@ -2,8 +2,9 @@ import React, { ReactElement, InputHTMLAttributes, FC } from 'react'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import classNames from 'classnames'
 import Icon from '../Icon/index'
+import './style.scss'
 
-type InputSize = 'lg' | 'small'
+type InputSize = 'large' | 'small'
 
 export interface InputProps
   extends Omit<InputHTMLAttributes<HTMLElement>, 'size'> {

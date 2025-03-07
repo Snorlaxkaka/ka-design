@@ -1,16 +1,9 @@
 import React, { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
 import classNames from 'classnames'
+import './style.scss'
 
-export enum ButtonSize {
-  Large = 'large',
-  Small = 'small',
-}
-export enum ButtonType {
-  Primary = 'primary',
-  Default = 'default',
-  Danger = 'danger',
-  Link = 'link',
-}
+export type ButtonSize = 'large' | 'small'
+export type ButtonType = 'primary' | 'default' | 'danger' | 'link'
 export interface BaseButtonProps {
   className?: string
   disabled?: boolean
