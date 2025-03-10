@@ -3,6 +3,7 @@ import React, { FC, useRef, ChangeEvent, useState } from 'react'
 import axios from 'axios'
 import Dragger from './dragger'
 import UploadList from './uploadList'
+import './style.scss'
 
 export type UploadFileStatus = 'ready' | 'uploading' | 'success' | 'error'
 export interface UploadFile {
