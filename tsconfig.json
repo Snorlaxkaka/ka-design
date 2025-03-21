@@ -13,6 +13,15 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    "types": [
+      "mime",
+      "parse-json",
+      "prettier"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -21,6 +30,7 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src",
+    "types"
   ]
 }

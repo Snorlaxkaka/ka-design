@@ -12,11 +12,12 @@
     "@types/node": "^16.18.126",
     "@types/react-dom": "^19.0.4",
     "axios": "^1.8.1",
-    "node-scss": "^7.0.3",
+    "node-sass": "^9.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",
+    "rimraf": "^6.0.1",
     "web-vitals": "^2.1.4"
   },
   "peerDependencies": {
@@ -25,10 +26,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "pnpm clean && pnpm build-ts && pnpm build-css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-ts": "tsc -p tsconfig.build.json"
+    "build-ts": "tsc -p tsconfig.build.json",
+    "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
+    "clean": "rimraf ./dist"
   },
   "eslintConfig": {
     "extends": [
