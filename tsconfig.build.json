@@ -1,18 +1,25 @@
 {
   "compilerOptions": {
-    "outDir": "build",
-    "module": "ESNext", // 输出的类型
+    "outDir": "dist",
+    "module": "ESNext",
     "target": "ES5",
-    "declaration": true, // 生产.d.ts
+    "declaration": true,
     "jsx": "react",
-    "moduleResolution": "node", // 按node方式加载模块
-    "allowSyntheticDefaultImports": true // 允许 import React from 'react'方式引入
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "include": [
-    "src"
+    "src",
+    "src/**/*.d.ts"
   ],
   "exclude": [
     "src/**/*.test.tsx",
     "src/**/*.stories.tsx"
+  ],
+  "types": [
+    "mime",
+    "parse-json",
+    "prettier"
   ]
 }
