@@ -4,7 +4,7 @@
     "module": "ESNext", // 输出的类型
     "target": "ES5",
     "declaration": true, // 生产.d.ts
-    "jsx": "react",
+    "jsx": "react-jsx",
     "moduleResolution": "node", // 按node方式加载模块
     "allowSyntheticDefaultImports": true, // 允许 import React from 'react'方式引入
     "typeRoots": [
@@ -13,13 +13,16 @@
     ],
     "types": [
       "node",
+      "react",
+      "react-dom",
       // "mime",
       // "parse-json",
       // "prettier"
     ]
   },
   "include": [
-    "src"
+    "src",
+    "src/jsx.d.ts"
   ],
   "exclude": [
     "src/**/*.test.tsx"
