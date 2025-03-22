@@ -23,9 +23,6 @@ importers:
       '@testing-library/user-event':
         specifier: ^13.5.0
         version: 13.5.0(@testing-library/dom@10.4.0)
-      '@types/jest':
-        specifier: ^27.5.2
-        version: 27.5.2
       '@types/node':
         specifier: ^16.18.126
         version: 16.18.126
@@ -135,6 +132,9 @@ importers:
       '@types/istanbul-reports':
         specifier: ^3.0.4
         version: 3.0.4
+      '@types/jest':
+        specifier: ^27.5.2
+        version: 27.5.2
       '@types/jsdom':
         specifier: ^21.1.7
         version: 21.1.7
@@ -237,6 +237,9 @@ importers:
       eslint-plugin-testing-library:
         specifier: ^7.1.1
         version: 7.1.1(eslint@8.57.1)(typescript@4.9.5)
+      identity-obj-proxy:
+        specifier: ^3.0.0
+        version: 3.0.0
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@16.18.126)(babel-plugin-macros@3.1.0)

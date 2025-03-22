@@ -14,10 +14,7 @@
     "types": [
       "node",
       "react",
-      "react-dom",
-      // "mime",
-      // "parse-json",
-      // "prettier"
+      "react-dom"
     ]
   },
   "include": [
